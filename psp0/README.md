@@ -8,8 +8,12 @@ Programa número 1, hecho con TDD en Javascript
 Frameworks
 ---------------
 - Node
-- Karma
-- Jasmine
+- Mocha
+- Chai
+
+Dependencias Globales
+------
+ `npm install -g mocha `
 
 
 Instalación
@@ -19,14 +23,12 @@ Instalación
 - cd dir/
 - `npm install`
 
-Dependencias Globales
-------
- `npm install -g karma-cli phatomjs`
+
 
 Despliegue
 ----
-`node index.js`
+`npm start`
 
 Pruebas
 ------
-`karma init test/tests.conf.js`
+`npm test`
