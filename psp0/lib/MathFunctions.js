@@ -1,14 +1,14 @@
 function MathFunctions(){
 }
 
-MathFunctions.prototype.greet = function(){
-    return "Hello World";
+
+MathFunctions.prototype.average = function (array) {
+	var total = null;
+	array.forEach(function(a){
+		total += a;
+	});
+	return(total /array.length);
 };
-
-
-/*MathFunctions.prototype.average = function () {
-
-};*/
 
 MathFunctions.prototype.suma = function(a,b){
   return(a+b);
