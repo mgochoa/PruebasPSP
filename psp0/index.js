@@ -23,7 +23,7 @@
     clear();
     //Pinta titulos
     console.log(chalk.yellow(figlet.textSync('PSP0', {horizontalLayout: 'full'})));
-
+    
     var mf= new MathFunctions();
     //console.log(mf.suma(10,12));
     //Crea nueva listaLigada
