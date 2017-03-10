@@ -17,11 +17,12 @@ function files(){
   }
 };*/
 
-files.prototype.existeDirectorio=function(filePath){
+files.prototype.existeArchivo=function(filePath){
 
   try {
       return fs.statSync(filePath).isDirectory();
     } catch (err) {
+      //console.log(err);
       return false;
     }
 

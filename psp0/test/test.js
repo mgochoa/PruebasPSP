@@ -1,38 +1,37 @@
-var MathFunctions= require('../lib/MathFunctions');
-var files=require('../lib/files');
+var MathFunctions = require('../lib/MathFunctions');
+var files = require('../lib/files');
 var expect = require('chai').expect;
-var mf= null;
-var tf=null;
+var mf = null;
+var tf = null;
 
+describe('Pruebas operaciones matematicas', function() {
 
-describe('Pruebas operaciones matematicas',function(){
+    //Carga los metodos del objeto antes de cada 'it'
+    beforeEach(function() {
+        mf = new MathFunctions();
 
-  //Carga los metodos del objeto antes de cada 'it'
-  beforeEach(function(){
-    mf= new MathFunctions();
+    });
 
-  });
+    it('Deberia sumar dos numeros', function() {
+        expect(mf.suma(10, 12)).to.equal(22);
 
-  it('Deberia sumar dos numeros',function(){
-    expect(mf.suma(10,12)).to.equal(22);
+    });
 
-  });
-
-  it('Deberia calcular la media de un grupo de numeros', function(){
-    var numberArray=[20,20,20,20,20];
-    expect(mf.average(numberArray)).to.equal(20);
-  });
+    it('Deberia calcular la media de un grupo de numeros', function() {
+        var numberArray = [10, 30, 25, 15, 20];
+        expect(mf.average(numberArray)).to.equal(20);
+    });
 });
 
-describe('Pruebas de lectura de archivos',function(){
+describe('Pruebas de lectura de archivos', function() {
 
-beforeEach(function(){
-  tf=new files();
+    beforeEach(function() {
+        tf = new files();
 
-});
-it('Esta funcion deberia leer archivo txt',function(){
-  expect(tf.existeDirectorio('../filesTest/')).to.be.true;
+    });
+    it('Es un archivo', function() {
+        expect(tf.existeArchivo('Archivo.txt')).to.be.true;
 
-});
+    });
 
 });

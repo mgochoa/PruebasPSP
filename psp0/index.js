@@ -25,16 +25,16 @@
     console.log(chalk.yellow(figlet.textSync('PSP0', {horizontalLayout: 'full'})));
 
     var mf= new MathFunctions();
-    console.log(mf.suma(10,12));
+    //console.log(mf.suma(10,12));
     //Crea nueva listaLigada
     var ll = new linkedList();
     //Probando listaLigada
-    ll.add("Hola");
-    ll.add("Mundo");
+    //ll.add("Hola");
+    //ll.add("Mundo");
     //Muestra lista ligada
-    console.log(ll);
+    //console.log(ll);
 
-    
+
     /*getInformation(function() {
         console.log(arguments['0']);
         var array = arguments['0'].numberFile.split(';');
