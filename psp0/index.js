@@ -18,16 +18,30 @@
     var linkedList = require('./lib/linkedList');
     var MathFunctions = require('./lib/MathFunctions');
     var myNumberArray = [];
+    var path = require('path');
+
 
     //Limpia la consola
     clear();
     //Pinta titulos
     console.log(chalk.yellow(figlet.textSync('PSP0', {horizontalLayout: 'full'})));
-    
+
     var mf= new MathFunctions();
     //console.log(mf.suma(10,12));
     //Crea nueva listaLigada
     var ll = new linkedList();
+    var tf = new files();
+
+    tf.openFile('test/Archivo.txt',function(err,content){
+      console.log(content);
+    });
+    tf.readCsvFile('test/Archivo.txt',function(err,content){
+      console.log(content._length);
+      //console.log(content.head);
+    //  console.log(content.tail);
+      content.showAll();
+      console.log(mf.averageLl(content));
+    });
     //Probando listaLigada
     //ll.add("Hola");
     //ll.add("Mundo");
