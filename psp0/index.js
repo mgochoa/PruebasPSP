@@ -6,12 +6,6 @@
     var CLI = require('clui');
     var figlet = require('figlet');
     var inquirer = require('inquirer');
-    /*var Preferences = require('preferences');
-    var Spinner = CLI.Spinner;
-    var GitHubApi = require('github');
-    var _ = require('lodash');
-    var git = require('simple-git')();
-    var touch = require('touch');*/
     var fs = require('fs');
     //Librerias locales
     var files = require('./lib/files');
@@ -20,122 +14,52 @@
     var myNumberArray = [];
     var path = require('path');
 
-
+    //Objetos locales
+    //Crea nuevo objeto de funciones matematicas
+    var mf = new MathFunctions();
+    //Crea nueva listaLigada
+    var ll = new linkedList();
+    var tf = new files();
     //Limpia la consola
     clear();
     //Pinta titulos
     console.log(chalk.yellow(figlet.textSync('PSP0', {horizontalLayout: 'full'})));
 
-    var mf= new MathFunctions();
-    //console.log(mf.suma(10,12));
-    //Crea nueva listaLigada
-    var ll = new linkedList();
-    var tf = new files();
-//TODO: SOlo dejar readCsvFile
-    tf.openFile('test/Archivo.txt',function(err,content){
-        if(err){
-            throw err;
+
+
+
+    process.argv.forEach(function(val, index, array) {
+        if (index >= 2) {
+            console.log(chalk.green('Archivo a procesar: ' + val));
+            console.log(chalk.green('Procesando...'));
+            setTimeout(function() {
+                processFile(val);
+            }, 2000);
+
         }
-      console.log(content);
     });
-    tf.readCsvFile('test/Archivo.txt',function(err,content){
-      if(err){
-        console.log(err);
-      }
-      if(content){
-        console.log(content);
-        console.log(content._length);
-        //console.log(content.head);
-      //  console.log(content.tail);
-        content.showAll();
-        console.log(mf.averageLl(content));
-      }
 
-    });
-    //Probando listaLigada
-    //ll.add("Hola");
-    //ll.add("Mundo");
-    //Muestra lista ligada
-    //console.log(ll);
+    function processFile(val) {
+      var hasError=false;
+      tf.readCsvFile(val, function(err, content) {
+          if (err) {
+              if(!hasError){
+                  console.log(chalk.red('Archivo: ',val));
+                  console.log(chalk.red(err));
+                    hasError=true;
+              };
 
 
-    /*getInformation(function() {
-        console.log(arguments['0']);
-        var array = arguments['0'].numberFile.split(';');
-        console.log('Number array: ' + array.join('/'));
-    });*/
+          }
+          if (!hasError) {
 
+              console.log(chalk.magenta('Archivo: '),val);
+              console.log(chalk.magenta('Cantidad de números: '),content._length);
+              console.log(chalk.magenta('Media:'), mf.averageLl(content));
+              console.log(chalk.magenta('Desviacion estandar: '), mf.standardDeviationLl(content));
+          }
 
-/**
-Funciones para probar
-**/
-    function getInformation(callback) {
-        var questions = [
-            {
-                name: 'username',
-                type: 'input',
-                message: 'Enter your Github username or e-mail address:',
-                validate: function(value) {
-                    if (value.length) {
-                        return true;
-                    } else {
-                        return 'Please enter your username or e-mail address';
-                    }
-                }
-            }, {
-                name: 'password',
-                type: 'password',
-                message: 'Enter your password:',
-                validate: function(value) {
-                    if (value.length) {
-                        return true;
-                    } else {
-                        return 'Please enter your password';
-                    }
-                }
-            }, {
-                name: 'listard',
-                type: 'list',
-                message: 'Elige uno',
-                choices: [
-                    "Opcion A", "Opcion B", "Opcion C"
-                ],
-                default: "Opcion A",
-                validate: function(value) {
-                    if (value.length) {
-                        return true;
-                    } else {
-                        return 'Escoje una opcion';
-                    }
-                }
-            }, {
-                name: 'numberFile',
-                type: 'editor',
-                message: "Ingrese los numeros separados por punto y coma"
-            }
-        ];
-
-        inquirer.prompt(questions).then(callback);
-    }
-
-
-    function getNumbers(callback) {
-        var questions = {
-            name: 'number',
-            type: 'input',
-            message: 'Enter a number',
-            validate: function(value) {
-                if (typeof value == 'number') {
-                    myNumberArray.push(value);
-                    return true;
-                } else if (value == '') {
-                } else {
-                    return 'Please enter a valid number';
-                }
-            }
-        };
-        inquirer.prompt(questions).then(callback);
-
+      });
     };
 
 })();

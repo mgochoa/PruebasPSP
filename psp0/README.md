@@ -27,7 +27,13 @@ Instalación
 
 Despliegue
 ----
-`npm start`
+`npm start <args>`
+
+Donde _<args>_ son los Paths relativos de los archivos donde se encuentran los Datasets, que son grupos de números serparados por comas.
+
+Por ejemplo
+
+`npm start test/dataset_1.txt test/dataset_2.txt`
 
 Pruebas
 ------
