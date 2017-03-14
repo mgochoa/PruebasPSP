@@ -33,6 +33,9 @@
     var tf = new files();
 //TODO: SOlo dejar readCsvFile
     tf.openFile('test/Archivo.txt',function(err,content){
+        if(err){
+            throw err;
+        }
       console.log(content);
     });
     tf.readCsvFile('test/Archivo.txt',function(err,content){

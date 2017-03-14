@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-global.appRoot = path.resolve(__dirname + '/../');
+var appRoot = path.resolve(__dirname + '/../');
 var linkedList = require('./linkedList');
 
 function files() {
@@ -13,7 +13,6 @@ files.prototype.isNumeric = function(n) {
 files.prototype.openFile = function(filePath, callback) {
 
     var fp = path.join(appRoot, filePath);
-    var response = null;
     fs.readFile(fp, {
         encoding: 'utf-8'
     }, function(err, content) {
