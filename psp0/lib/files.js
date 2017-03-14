@@ -6,25 +6,30 @@ var linkedList = require('./linkedList');
 function files() {
     this.data = null;
 }
+
+files.prototype.isNumeric = function(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+};
 files.prototype.openFile = function(filePath, callback) {
 
-    var filePath = path.join(appRoot, filePath);
+    var fp = path.join(appRoot, filePath);
     var response = null;
-    fs.readFile(filePath, {
+    fs.readFile(fp, {
         encoding: 'utf-8'
     }, function(err, content) {
         if (err)
             return callback(err);
-        callback(null, content)
+        callback(null, content);
     });
 
 };
-
+//TODO:No se maneja el callback correctamente
 files.prototype.readCsvFile = function(filePath, callback) {
+  var _this = this;
 
-    var filePath = path.join(appRoot, filePath);
+    var fp = path.join(appRoot, filePath);
     var response = new linkedList();
-    fs.readFile(filePath, {
+    fs.readFile(fp, {
         encoding: 'utf-8'
     }, function(err, content) {
         if (err)
@@ -32,17 +37,15 @@ files.prototype.readCsvFile = function(filePath, callback) {
 
         var parts = content.split(';');
         parts.forEach(function(a) {
-          if(isNumeric(a)) response.add(Number(a));
-          else{
-              console.log("No es un numero.");
-          }
+            if (_this.isNumeric(a))
+                response.add(Number(a));
+            else {
+                return callback(err);
+            }
         });
-        callback(null, response)
+        callback(null, response);
     });
 
 };
- function isNumeric(n) {
-  return !isNaN(parseFloat(n)) && isFinite(n);
-}
 
 module.exports = files;

@@ -17,7 +17,6 @@ describe('Pruebas operaciones matematicas', function() {
 
     it('Deberia sumar dos numeros', function() {
         expect(mf.suma(10, 12)).to.equal(22);
-
     });
 
     it('Deberia calcular la media de un grupo de numeros', function() {
@@ -36,6 +35,7 @@ describe('Pruebas operaciones matematicas', function() {
 describe('Pruebas de lectura de archivos', function() {
     var fileTest = '10;15;30;40;5;20';
     var pathTestFile = 'test/Archivo.txt';
+  //var pathTestFile = 'test/badFile.txt';
     var firstFileTest = null;
     var myLl;
 
@@ -46,6 +46,10 @@ describe('Pruebas de lectura de archivos', function() {
             myLl = content;
             done();
         });
+    });
+    //TODO: Develop this test.
+    it('Debe verificar que el archivo existe',function(){
+      expect(tf.fileExists(pathTestFile)).to.be.true;
     });
 
     it('Debe leer el archivo y retornar una lista ligada', function() {
@@ -58,7 +62,6 @@ describe('Pruebas de lectura de archivos', function() {
         expect(myLl._length).to.equal(6);
     });
     it('Deberia calcular la media de la lista ligada', function() {
-
         expect(mf.averageLl(myLl)).to.equal(20);
     });
 

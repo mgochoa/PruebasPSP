@@ -31,16 +31,23 @@
     //Crea nueva listaLigada
     var ll = new linkedList();
     var tf = new files();
-
+//TODO: SOlo dejar readCsvFile
     tf.openFile('test/Archivo.txt',function(err,content){
       console.log(content);
     });
     tf.readCsvFile('test/Archivo.txt',function(err,content){
-      console.log(content._length);
-      //console.log(content.head);
-    //  console.log(content.tail);
-      content.showAll();
-      console.log(mf.averageLl(content));
+      if(err){
+        console.log(err);
+      }
+      if(content){
+        console.log(content);
+        console.log(content._length);
+        //console.log(content.head);
+      //  console.log(content.tail);
+        content.showAll();
+        console.log(mf.averageLl(content));
+      }
+
     });
     //Probando listaLigada
     //ll.add("Hola");
