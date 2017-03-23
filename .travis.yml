@@ -2,10 +2,7 @@ language: node_js
 node_js:
   - "iojs"
   - "6"
-before_install:
-  - cd psp0
-install:
-  - npm install -g mocha
-  - npm install
-script:
-  - npm test
+env:
+  - TEST_DIR=psp0
+  - TEST_DIR=psp1
+script: cd $TEST_DIR && npm install && npm install -g mocha && npm test
