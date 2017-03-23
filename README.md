@@ -1,5 +1,7 @@
 PSP
 ----------
+
+[![Build Status](https://travis-ci.org/mgochoa/PruebasPSP.svg?branch=master)](https://travis-ci.org/mgochoa/PruebasPSP)
 El reto es desarrollar estos programas usando TDD.
 Pueden usar las herramientas tecnológicas y aplicaciones necesarias para lograrlo.
 Cada jueves de entrega, cada equipo de trabajo mostrará los resultados obtenidos y el aprendizaje ganado ante los demás grupos.
@@ -21,4 +23,3 @@ Integrantes
  - Manuel Ochoa:  @mgochoa
  - Duvan Bedoya
  - Milena Cardenas
-
