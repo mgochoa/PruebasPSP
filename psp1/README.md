@@ -9,18 +9,21 @@ Frameworks
 - Node
 - Mocha
 - Chai
+- Angular
 
-Dependencias Globales
-------
- `npm install -g mocha `
+
 
 
 Instalación
 --------
 - Instalar _Node_ y _npm_
-- git clone
-- cd dir/
+- git clone https://github.com/mgochoa/PruebasPSP.git
+- cd PruebasPSP/psp1/
 - `npm install`
+
+Dependencias Globales
+------
+ `npm install -g mocha `
 
 
 
@@ -28,11 +31,11 @@ Despliegue
 ----
 `npm start <args>`
 
-Donde _<args>_ son los Paths relativos de los archivos donde se encuentran los Datasets, que son grupos de números serparados por comas.
+Donde _args_ es el  path relativos de los archivos donde se encuentran los Datasets, que son grupos de números serparados por comas.
 
 Por ejemplo
 
-`npm start test/test1.csv test/test2.csv`
+`npm start test/test1.csv`
 
 Pruebas
 ------
