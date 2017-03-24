@@ -64,7 +64,10 @@ files.prototype.readCsvFile = function(filePath, callback) {
             var error = false;
             for (var i = 0; i < xs.length; i++) {
                 if (_this.isNumeric(xs[i]) && _this.isNumeric(ys[i])) {
-                    var pair = [Number(xs[i]), Number(ys[i])];
+                    var pair = [
+                        Number(xs[i]),
+                        Number(ys[i])
+                    ];
                     response.push(pair);
                 } else {
                     error = true;
@@ -102,8 +105,25 @@ files.prototype.writeArray = function(filePath, callback) {
         callback(null, response);
     });
 };
-files.prototype.toNumber = function(num){
-  return Number(num);
+files.prototype.toNumber = function(num) {
+    return Number(num);
+};
+files.prototype.toJSON = function(obj) {
+  var newPoints=[];
+    obj.points.forEach(function (dupla) {
+      newPoints.push({x:dupla[0],y:dupla[1]});
+    });
+    obj.points =newPoints;
+    var json = JSON.stringify(obj);
+    fs.writeFile('www/data.json', json, 'utf8', function(err) {
+        if (err) {
+            return console.log(err);
+        }
+
+        //console.log("The file was saved!");
+
+    });
+
 };
 
 module.exports = files;

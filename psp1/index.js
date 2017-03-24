@@ -4,6 +4,9 @@
     var clear = require('clear');
     var figlet = require('figlet');
     var fs = require('fs');
+    var connect = require('connect');
+    var serveStatic = require('serve-static');
+    var open = require('open');
     //Librerias locales
     var files = require('./lib/files');
     var linkedList = require('./lib/linkedList');
@@ -61,7 +64,13 @@
                 console.log(chalk.magenta('b0: '), results.equation[0]);
                 console.log(chalk.magenta('b1: '), results.equation[1]);
                 console.log(chalk.magenta('equation: '), results.string);
-
+                results.fileName=val;
+                tf.toJSON(results);
+                connect().use(serveStatic(__dirname+'/www/')).listen(process.env.PORT || 8080, function(){
+                    console.log('Server running on 8080...');
+                    console.log(chalk.white('>> ctrl + c  to stop the server'));
+                    open('http://localhost:8080');
+                });
             }
 
         });
