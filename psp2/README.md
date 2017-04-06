@@ -40,4 +40,5 @@ Por ejemplo
 Pruebas
 ------
 `mocha test --reporter mochawesome`
+
 `open ./mochawesome-reports/mochawesome.html`
