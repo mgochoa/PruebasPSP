@@ -5,9 +5,9 @@
     "passes": 6,
     "pending": 0,
     "failures": 0,
-    "start": "2017-04-06T21:50:17.592Z",
-    "end": "2017-04-06T21:50:17.612Z",
-    "duration": 20,
+    "start": "2017-04-06T22:33:39.002Z",
+    "end": "2017-04-06T22:33:39.027Z",
+    "duration": 25,
     "testsRegistered": 6,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -29,7 +29,7 @@
             "title": "Recibe el archivo y los valores resultantes por la division son iguales a los del ejemplo",
             "fullTitle": "Tests  Recibe el archivo y los valores resultantes por la division son iguales a los del ejemplo",
             "timedOut": false,
-            "duration": 3,
+            "duration": 5,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -38,8 +38,8 @@
             "code": "expect(arrayReponse).to.deep.equal(arrayTest);",
             "err": {},
             "isRoot": false,
-            "uuid": "29a3b507-f4f6-405e-84e4-ada59a1da47b",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "59c2aca6-a8a9-4b45-a74d-5f558399cb11",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
@@ -55,8 +55,8 @@
             "code": "expect(average).to.be.equal(2.801517529591993);",
             "err": {},
             "isRoot": false,
-            "uuid": "79d9e9ed-566b-452c-a99f-6d0d4e1074ef",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "e855ad2a-6673-41e2-b61e-ae7ec6e90c99",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
@@ -72,8 +72,8 @@
             "code": "expect(variance).to.be.equal(0.43625283003464466);",
             "err": {},
             "isRoot": false,
-            "uuid": "ec0abb99-1cfd-492c-b9b0-6d41ab5ec9e4",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "c4ecef67-94f1-4978-b601-2e158257b479",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
@@ -89,15 +89,15 @@
             "code": "expect(standarDeviation).to.be.equal(0.6604943830454917);",
             "err": {},
             "isRoot": false,
-            "uuid": "d76820b4-1187-4623-8e59-94ae62495935",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "835cd3e8-fdff-402d-8945-ac1131cf6079",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
             "title": "Obtiene los rangos logaritmicos",
             "fullTitle": "Tests  Obtiene los rangos logaritmicos",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -106,8 +106,8 @@
             "code": "expect(logarithmicRanges).to.deep.equal(logarithmicRangesTest);",
             "err": {},
             "isRoot": false,
-            "uuid": "e93644ee-b366-4e8f-949d-6650e4e678f4",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "56001e27-d17a-4554-8863-1823bff0a078",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
@@ -123,8 +123,8 @@
             "code": "expect(normalizedRanges).to.deep.equal(normalizedRangesTest);",
             "err": {},
             "isRoot": false,
-            "uuid": "8ecf3c60-c541-4ee7-8c58-a2a6ac0f96ca",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "291938dd-eb8c-4932-8f2c-939d11cbcf6b",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           }
         ],
@@ -132,14 +132,14 @@
         "root": false,
         "_timeout": 2000,
         "file": "/test/test.js",
-        "uuid": "5a0ff321-01ec-4429-9525-5f81db091302",
+        "uuid": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
         "fullFile": "/Users/aw2/nodeProjects/PruebasPSP/psp2/test/test.js",
         "passes": [
           {
             "title": "Recibe el archivo y los valores resultantes por la division son iguales a los del ejemplo",
             "fullTitle": "Tests  Recibe el archivo y los valores resultantes por la division son iguales a los del ejemplo",
             "timedOut": false,
-            "duration": 3,
+            "duration": 5,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -148,8 +148,8 @@
             "code": "expect(arrayReponse).to.deep.equal(arrayTest);",
             "err": {},
             "isRoot": false,
-            "uuid": "29a3b507-f4f6-405e-84e4-ada59a1da47b",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "59c2aca6-a8a9-4b45-a74d-5f558399cb11",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
@@ -165,8 +165,8 @@
             "code": "expect(average).to.be.equal(2.801517529591993);",
             "err": {},
             "isRoot": false,
-            "uuid": "79d9e9ed-566b-452c-a99f-6d0d4e1074ef",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "e855ad2a-6673-41e2-b61e-ae7ec6e90c99",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
@@ -182,8 +182,8 @@
             "code": "expect(variance).to.be.equal(0.43625283003464466);",
             "err": {},
             "isRoot": false,
-            "uuid": "ec0abb99-1cfd-492c-b9b0-6d41ab5ec9e4",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "c4ecef67-94f1-4978-b601-2e158257b479",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
@@ -199,15 +199,15 @@
             "code": "expect(standarDeviation).to.be.equal(0.6604943830454917);",
             "err": {},
             "isRoot": false,
-            "uuid": "d76820b4-1187-4623-8e59-94ae62495935",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "835cd3e8-fdff-402d-8945-ac1131cf6079",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
             "title": "Obtiene los rangos logaritmicos",
             "fullTitle": "Tests  Obtiene los rangos logaritmicos",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -216,8 +216,8 @@
             "code": "expect(logarithmicRanges).to.deep.equal(logarithmicRangesTest);",
             "err": {},
             "isRoot": false,
-            "uuid": "e93644ee-b366-4e8f-949d-6650e4e678f4",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "56001e27-d17a-4554-8863-1823bff0a078",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           },
           {
@@ -233,8 +233,8 @@
             "code": "expect(normalizedRanges).to.deep.equal(normalizedRangesTest);",
             "err": {},
             "isRoot": false,
-            "uuid": "8ecf3c60-c541-4ee7-8c58-a2a6ac0f96ca",
-            "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+            "uuid": "291938dd-eb8c-4932-8f2c-939d11cbcf6b",
+            "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
             "skipped": false
           }
         ],
@@ -251,7 +251,7 @@
         "hasFailures": false,
         "hasPending": false,
         "hasSkipped": false,
-        "duration": 3,
+        "duration": 6,
         "rootEmpty": false
       }
     ],
@@ -259,7 +259,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2000,
-    "uuid": "5fe6f937-534f-440e-b8d1-3390dbb2e5b3",
+    "uuid": "2620f180-6a29-4cee-8797-1fd5b164b6ee",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -284,7 +284,7 @@
       "title": "Recibe el archivo y los valores resultantes por la division son iguales a los del ejemplo",
       "fullTitle": "Tests  Recibe el archivo y los valores resultantes por la division son iguales a los del ejemplo",
       "timedOut": false,
-      "duration": 3,
+      "duration": 5,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -293,8 +293,8 @@
       "code": "expect(arrayReponse).to.deep.equal(arrayTest);",
       "err": {},
       "isRoot": false,
-      "uuid": "29a3b507-f4f6-405e-84e4-ada59a1da47b",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "59c2aca6-a8a9-4b45-a74d-5f558399cb11",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
@@ -310,8 +310,8 @@
       "code": "expect(average).to.be.equal(2.801517529591993);",
       "err": {},
       "isRoot": false,
-      "uuid": "79d9e9ed-566b-452c-a99f-6d0d4e1074ef",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "e855ad2a-6673-41e2-b61e-ae7ec6e90c99",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
@@ -327,8 +327,8 @@
       "code": "expect(variance).to.be.equal(0.43625283003464466);",
       "err": {},
       "isRoot": false,
-      "uuid": "ec0abb99-1cfd-492c-b9b0-6d41ab5ec9e4",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "c4ecef67-94f1-4978-b601-2e158257b479",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
@@ -344,15 +344,15 @@
       "code": "expect(standarDeviation).to.be.equal(0.6604943830454917);",
       "err": {},
       "isRoot": false,
-      "uuid": "d76820b4-1187-4623-8e59-94ae62495935",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "835cd3e8-fdff-402d-8945-ac1131cf6079",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
       "title": "Obtiene los rangos logaritmicos",
       "fullTitle": "Tests  Obtiene los rangos logaritmicos",
       "timedOut": false,
-      "duration": 0,
+      "duration": 1,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -361,8 +361,8 @@
       "code": "expect(logarithmicRanges).to.deep.equal(logarithmicRangesTest);",
       "err": {},
       "isRoot": false,
-      "uuid": "e93644ee-b366-4e8f-949d-6650e4e678f4",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "56001e27-d17a-4554-8863-1823bff0a078",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
@@ -378,8 +378,8 @@
       "code": "expect(normalizedRanges).to.deep.equal(normalizedRangesTest);",
       "err": {},
       "isRoot": false,
-      "uuid": "8ecf3c60-c541-4ee7-8c58-a2a6ac0f96ca",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "291938dd-eb8c-4932-8f2c-939d11cbcf6b",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     }
   ],
@@ -389,7 +389,7 @@
       "title": "Recibe el archivo y los valores resultantes por la division son iguales a los del ejemplo",
       "fullTitle": "Tests  Recibe el archivo y los valores resultantes por la division son iguales a los del ejemplo",
       "timedOut": false,
-      "duration": 3,
+      "duration": 5,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -398,8 +398,8 @@
       "code": "expect(arrayReponse).to.deep.equal(arrayTest);",
       "err": {},
       "isRoot": false,
-      "uuid": "29a3b507-f4f6-405e-84e4-ada59a1da47b",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "59c2aca6-a8a9-4b45-a74d-5f558399cb11",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
@@ -415,8 +415,8 @@
       "code": "expect(average).to.be.equal(2.801517529591993);",
       "err": {},
       "isRoot": false,
-      "uuid": "79d9e9ed-566b-452c-a99f-6d0d4e1074ef",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "e855ad2a-6673-41e2-b61e-ae7ec6e90c99",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
@@ -432,8 +432,8 @@
       "code": "expect(variance).to.be.equal(0.43625283003464466);",
       "err": {},
       "isRoot": false,
-      "uuid": "ec0abb99-1cfd-492c-b9b0-6d41ab5ec9e4",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "c4ecef67-94f1-4978-b601-2e158257b479",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
@@ -449,15 +449,15 @@
       "code": "expect(standarDeviation).to.be.equal(0.6604943830454917);",
       "err": {},
       "isRoot": false,
-      "uuid": "d76820b4-1187-4623-8e59-94ae62495935",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "835cd3e8-fdff-402d-8945-ac1131cf6079",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
       "title": "Obtiene los rangos logaritmicos",
       "fullTitle": "Tests  Obtiene los rangos logaritmicos",
       "timedOut": false,
-      "duration": 0,
+      "duration": 1,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -466,8 +466,8 @@
       "code": "expect(logarithmicRanges).to.deep.equal(logarithmicRangesTest);",
       "err": {},
       "isRoot": false,
-      "uuid": "e93644ee-b366-4e8f-949d-6650e4e678f4",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "56001e27-d17a-4554-8863-1823bff0a078",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     },
     {
@@ -483,8 +483,8 @@
       "code": "expect(normalizedRanges).to.deep.equal(normalizedRangesTest);",
       "err": {},
       "isRoot": false,
-      "uuid": "8ecf3c60-c541-4ee7-8c58-a2a6ac0f96ca",
-      "parentUUID": "5a0ff321-01ec-4429-9525-5f81db091302",
+      "uuid": "291938dd-eb8c-4932-8f2c-939d11cbcf6b",
+      "parentUUID": "6f5c1272-ddb3-4023-b2fc-b938713bbc05",
       "skipped": false
     }
   ],

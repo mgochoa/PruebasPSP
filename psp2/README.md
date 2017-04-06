@@ -2,7 +2,7 @@ PSP1
 --------
 [![Build Status](https://travis-ci.org/mgochoa/PruebasPSP.svg?branch=master)](https://travis-ci.org/mgochoa/PruebasPSP)
 
-Programa número 2, hecho con TDD en Javascript
+Programa número 3, hecho con TDD en Javascript
 
 Frameworks
 ---------------
@@ -39,4 +39,5 @@ Por ejemplo
 
 Pruebas
 ------
-`npm test`
+`mocha test --reporter mochawesome`
+`open ./mochawesome-reports/mochawesome.html`
