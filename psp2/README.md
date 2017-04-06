@@ -18,7 +18,7 @@ Instalación
 --------
 - Instalar _Node_ y _npm_
 - git clone https://github.com/mgochoa/PruebasPSP.git
-- cd PruebasPSP/psp1/
+- cd PruebasPSP/psp2/
 - `npm install`
 
 Dependencias Globales
@@ -31,11 +31,11 @@ Despliegue
 ----
 `npm start <args>`
 
-Donde _args_ es el  path relativos de los archivos donde se encuentran los Datasets, que son grupos de números serparados por comas.
+Donde _args_ es el  path relativos del archivo donde se encuentran los Datasets, que son grupos de números serparados por comas.
 
 Por ejemplo
 
-`npm start test/test1.csv`
+`npm start test/dataset.csv`
 
 Pruebas
 ------
