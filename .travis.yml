@@ -5,4 +5,5 @@ node_js:
 env:
   - TEST_DIR=psp0
   - TEST_DIR=psp1
+  - TEST_DIR=psp2
 script: cd $TEST_DIR && npm install && npm install -g mocha && npm test

@@ -1,0 +1,31 @@
+{
+  "name": "psp1",
+  "version": "1.0.0",
+  "description": "Personal Software Process 1 para Pruebas de Software UdeA",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd www/ && npm install",
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "author": "Manuel Guillermo Ochoa Loaiza",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-chart.js": "^1.1.1",
+    "angular-route": "^1.6.3",
+    "chai": "^3.5.0",
+    "chalk": "^1.1.3",
+    "clear": "0.0.1",
+    "connect": "^3.6.0",
+    "figlet": "^1.1.2",
+    "lodash": "^4.13.1",
+    "mocha": "^3.2.0",
+    "open": "0.0.5",
+    "regression": "^1.4.0",
+    "serve-static": "^1.12.1"
+  },
+  "devDependencies": {
+    "mochawesome": "^2.0.4"
+  }
+}

@@ -25,9 +25,6 @@
     //Pinta titulos
     console.log(chalk.yellow(figlet.textSync('PSP0', {horizontalLayout: 'full'})));
 
-
-
-
     process.argv.forEach(function(val, index, array) {
         if (index >= 2) {
             console.log(chalk.green('Archivo a procesar: ' + val));
@@ -40,25 +37,23 @@
     });
 
     function processFile(val) {
-      var hasError=false;
-      tf.readCsvFile(val, function(err, content) {
-          if (err) {
-              if(!hasError){
-                  console.log(chalk.red('Archivo: ',val));
-                  console.log(chalk.red(err));
-                    hasError=true;
-              };
+        var hasError = false;
+        tf.readCsvFile(val, function(err, content) {
+            if (err && !hasError) {
+                console.log(chalk.red('Archivo: ', val));
+                console.log(chalk.red(err));
+                hasError = true;
 
-          }
-          if (!hasError) {
+            }
+            if (!hasError) {
 
-              console.log(chalk.magenta('Archivo: '),val);
-              console.log(chalk.magenta('Cantidad de números: '),content._length);
-              console.log(chalk.magenta('Media:'), mf.averageLl(content));
-              console.log(chalk.magenta('Desviacion estandar: '), mf.standardDeviationLl(content));
-          }
+                console.log(chalk.magenta('Archivo: '), val);
+                console.log(chalk.magenta('Cantidad de números: '), content._length);
+                console.log(chalk.magenta('Media:'), mf.averageLl(content));
+                console.log(chalk.magenta('Desviacion estandar: '), mf.standardDeviationLl(content));
+            }
 
-      });
+        });
     };
 
 })();
